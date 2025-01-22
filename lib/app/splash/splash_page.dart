@@ -16,7 +16,9 @@ class _SplashPageState extends State<SplashPage> {
       (value) {
         if (mounted) {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => Container()),
+            MaterialPageRoute(
+              builder: (context) => Center(child: Text('Depois da Splash')),
+            ),
           );
         }
       },
