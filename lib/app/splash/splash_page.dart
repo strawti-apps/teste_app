@@ -29,10 +29,16 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
+      body: Center(
+        child: Column(
+          spacing: 15,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Carregando...'),
+            CircularProgressIndicator.adaptive(),
+          ],
+        ),
       ),
-      body: Container(),
     );
   }
 }
